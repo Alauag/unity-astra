@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class detect : MonoBehaviour
 {
-    public GameObject cp, cb, mp, b;
+    public GameObject cp, cb, mp, db, ob, bb;
     public Color[] color_list;
     int color;
     // Start is called before the first frame update
@@ -29,7 +30,11 @@ public class detect : MonoBehaviour
                 cb.SetActive(false);
                 mp.SetActive(false);
                 color = 0;
-                b.GetComponent<SpriteRenderer>().color = color_list[color];
+                db.GetComponent<Image>().color = color_list[color];
+                ob.GetComponent<Image>().color = color_list[color];
+                bb.GetComponent<Image>().color = color_list[color];
+                GameObject.Find("cp Button").GetComponent<Button>().enabled = false;
+                GameObject.Find("rocket").GetComponent<rocket>().enabled = false;
             }
         }
     }
