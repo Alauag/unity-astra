@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class detect : MonoBehaviour
 {
-    public GameObject cp, cb, mp, db, ob, bb;
+    public GameObject cp, cb, mp, db, ob, bb, wdc, window;
     public Color[] color_list;
     int color;
     // Start is called before the first frame update
@@ -29,6 +29,9 @@ public class detect : MonoBehaviour
                 cp.SetActive(false);
                 cb.SetActive(false);
                 mp.SetActive(false);
+                wdc.SetActive(true);
+                window.SetActive(false);
+
                 color = 0;
                 db.GetComponent<Image>().color = color_list[color];
                 ob.GetComponent<Image>().color = color_list[color];
