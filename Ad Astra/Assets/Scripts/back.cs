@@ -29,6 +29,8 @@ public class back : MonoBehaviour
         wdc.SetActive(false);
         window.SetActive(true);
         GameObject.Find("cp Button").GetComponent<Button>().enabled = true;
-                GameObject.Find("rocket").GetComponent<rocket>().enabled = true;
+        GameObject.Find("detectButton").GetComponent<Button>().enabled = false;
+        GameObject.Find("backButton").GetComponent<Button>().enabled = false;
+        GameObject.Find("outButton").GetComponent<Button>().enabled = false;
     }
 }

@@ -38,6 +38,9 @@ public class detect : MonoBehaviour
                 bb.GetComponent<Image>().color = color_list[color];
                 GameObject.Find("cp Button").GetComponent<Button>().enabled = false;
                 GameObject.Find("rocket").GetComponent<rocket>().enabled = false;
+                GameObject.Find("detectButton").GetComponent<Button>().enabled = true;
+                GameObject.Find("backButton").GetComponent<Button>().enabled = true;
+                GameObject.Find("outButton").GetComponent<Button>().enabled = true;
             }
         }
     }
