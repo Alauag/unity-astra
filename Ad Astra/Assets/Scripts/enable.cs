@@ -15,4 +15,8 @@ public class enable : MonoBehaviour
     {
         GameObject.Find("rocket").GetComponent<rocket>().enabled = true;
     }
+    public void rocketNotMove()
+    {
+        GameObject.Find("rocket").GetComponent<rocket>().enabled = false;
+    }
 }

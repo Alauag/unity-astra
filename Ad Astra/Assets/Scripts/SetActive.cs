@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class SetActive : MonoBehaviour
 {
-    public GameObject cp, cb, mp;
-    public void Active_cp()
+    public GameObject ControlPanel, CloseButton, miniMap;
+    public void Active_ControlPanel()
     {
-        cp.SetActive(true);
-        cb.SetActive(true);
-        mp.SetActive(true);
+        ControlPanel.SetActive(true);
+        CloseButton.SetActive(true);
+        miniMap.SetActive(true);
     }
-    public void notActive_cp()
+    public void notActive_ControlPanel()
     {
-        cp.SetActive(false);
-        cb.SetActive(false);
-        mp.SetActive(false);
+        ControlPanel.SetActive(false);
+        CloseButton.SetActive(false);
+        miniMap.SetActive(false);
     }
 }

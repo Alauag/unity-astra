@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class back : MonoBehaviour
 {
-    public GameObject db, ob, bb, wdc, window;
+    public GameObject DetectButton, OutButton, BackButton, wdc, window;
     public Color[] color_list;
     int color;
     // Start is called before the first frame update
@@ -23,12 +23,12 @@ public class back : MonoBehaviour
     public void Back()
     {
         color = 0;
-        db.GetComponent<Image>().color = color_list[color];
-        ob.GetComponent<Image>().color = color_list[color];
-        bb.GetComponent<Image>().color = color_list[color];
+        DetectButton.GetComponent<Image>().color = color_list[color];
+        OutButton.GetComponent<Image>().color = color_list[color];
+        BackButton.GetComponent<Image>().color = color_list[color];
         wdc.SetActive(false);
         window.SetActive(true);
-        GameObject.Find("cp Button").GetComponent<Button>().enabled = true;
+        GameObject.Find("Control Panel Button").GetComponent<Button>().enabled = true;
         GameObject.Find("detectButton").GetComponent<Button>().enabled = false;
         GameObject.Find("backButton").GetComponent<Button>().enabled = false;
         GameObject.Find("outButton").GetComponent<Button>().enabled = false;

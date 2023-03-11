@@ -188,7 +188,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1109134492}
         m_TargetAssemblyTypeName: SetActive, Assembly-CSharp
-        m_MethodName: notActive_cp
+        m_MethodName: notActive_ControlPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 384673774}
+        m_TargetAssemblyTypeName: enable, Assembly-CSharp
+        m_MethodName: rocketNotMove
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -343,7 +355,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1867868078}
         m_TargetAssemblyTypeName: SetActive2, Assembly-CSharp
-        m_MethodName: Active_cp
+        m_MethodName: Active_data
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -688,12 +700,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3392dd9b2074740b82396e625be4c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cp: {fileID: 1876231612}
-  cb: {fileID: 65018180}
-  mp: {fileID: 1165680518}
-  db: {fileID: 101188479}
-  ob: {fileID: 2139900127}
-  bb: {fileID: 1872177196}
+  ControlPanel: {fileID: 1876231612}
+  CloseButton: {fileID: 65018180}
+  miniMap: {fileID: 1165680518}
+  DetectButton: {fileID: 101188479}
+  OutButton: {fileID: 2139900127}
+  BackButton: {fileID: 1872177196}
   wdc: {fileID: 1545931645}
   window: {fileID: 1482363091}
   color_list:
@@ -1037,12 +1049,6 @@ MonoBehaviour:
   Tfeature: {fileID: 889936244}
   Ttype: {fileID: 1466104959}
   Twarning: {fileID: 1472608949}
-  degree: 0
-  Name: violet
-  element: fire
-  feature: ???
-  type: small
-  warning: blablabla
 --- !u!1 &384673773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,7 +1547,7 @@ GameObject:
   - component: {fileID: 727048443}
   - component: {fileID: 727048445}
   m_Layer: 0
-  m_Name: planetLine
+  m_Name: planetLine1
   m_TagString: planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1685,7 +1691,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1867868078}
         m_TargetAssemblyTypeName: SetActive2, Assembly-CSharp
-        m_MethodName: notActive_cp
+        m_MethodName: notActive_data
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1965,7 +1971,7 @@ GameObject:
   - component: {fileID: 1068526337}
   - component: {fileID: 1068526336}
   m_Layer: 5
-  m_Name: cp Button
+  m_Name: Control Panel Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2037,7 +2043,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1109134492}
         m_TargetAssemblyTypeName: SetActive, Assembly-CSharp
-        m_MethodName: Active_cp
+        m_MethodName: Active_ControlPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2126,9 +2132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ff0e3160f1135479ccd5516097c86d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cp: {fileID: 1876231612}
-  cb: {fileID: 65018180}
-  mp: {fileID: 1165680518}
+  ControlPanel: {fileID: 1876231612}
+  CloseButton: {fileID: 65018180}
+  miniMap: {fileID: 1165680518}
 --- !u!4 &1109134493
 Transform:
   m_ObjectHideFlags: 0
@@ -2347,9 +2353,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7295a449d7f2441aac00b88ccc4cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  db: {fileID: 101188479}
-  ob: {fileID: 2139900127}
-  bb: {fileID: 1872177196}
+  DetectButton: {fileID: 101188479}
+  OutButton: {fileID: 2139900127}
+  BackButton: {fileID: 1872177196}
   wdc: {fileID: 1545931645}
   window: {fileID: 1482363091}
   color_list:
