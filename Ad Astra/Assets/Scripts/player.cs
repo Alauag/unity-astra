@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rocket : MonoBehaviour
+public class player : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -18,17 +18,15 @@ public class rocket : MonoBehaviour
 
     public void movement()
     {
-        if(Input.GetKey("w"))
+        if(Input.GetKey("d"))
         {
-            gameObject.transform.Translate(0, 0.025f, 0);
+            gameObject.transform.Translate(0.008f, 0, 0);
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
-        if (Input.GetKey("a"))
+        else if (Input.GetKey("a"))
         {
-            gameObject.transform.Rotate( 0, 0, 0.8f);
-        }
-        else if (Input.GetKey("d"))
-        {
-            gameObject.transform.Rotate( 0, 0, -0.8f);
+            gameObject.transform.Translate(-0.008f, 0, 0);
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
 
 
