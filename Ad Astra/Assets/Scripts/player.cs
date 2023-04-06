@@ -28,8 +28,5 @@ public class player : MonoBehaviour
             gameObject.transform.Translate(-0.008f, 0, 0);
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
-
-
-
     }
 }
