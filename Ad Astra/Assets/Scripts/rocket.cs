@@ -20,15 +20,15 @@ public class rocket : MonoBehaviour
     {
         if(Input.GetKey("w"))
         {
-            gameObject.transform.Translate(0, 0.04f, 0);
+            gameObject.transform.Translate(0, 0.025f, 0);
         }
         if (Input.GetKey("a"))
         {
-            gameObject.transform.Rotate( 0, 0, 1);
+            gameObject.transform.Rotate( 0, 0, 0.8f);
         }
         else if (Input.GetKey("d"))
         {
-            gameObject.transform.Rotate( 0, 0, -1);
+            gameObject.transform.Rotate( 0, 0, -0.8f);
         }
 
 
